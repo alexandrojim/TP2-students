@@ -5,7 +5,7 @@
 - Code UE : MU4RBR08
 - Chargé de Cours et resp. UE : Prof. Daniel Racoceanu
 - Chargé de TP : Gabriel Jimenez
-- Version : oct. 2023
+- Version : oct. 2024
 
 ## Travaux Pratiques (TP) / *Laboratories (Labs)*
 ### TP2 - Systèmes Bayésiens *(Bayesian systems)*
