@@ -22,3 +22,22 @@ L'objectif de ce laboratoire est de comprendre les différences entre l'approche
 2. Les CRs du TP vont consister en les codes-source Python ou Jupyter des Exos 1 et 2 (avec vos propres modifications, rajouts et commentaires, intégrés). Les 2 CRs est à déposer sur Moodle (dossier CR_TP1_votre_option (ISI, SAR, IPS, app)). 
 
     *The reports of the Lab will consist of the Python or Jupyter source codes of Exo 1 and 2 (with your own adds, modifications, and comments integrated). The 2 reports are to be placed on Moodle (CR_TP1_your_option (ISI, SAR, IPS, app) folder).*
+
+### Context and Theoretical Background
+
+Before diving into the code, it is essential to understand the fundamental difference between the Frequentist and Bayesian approaches, and how we structure complex dependencies using Bayesian Networks.
+
+1. Frequentist vs. Bayesian: A Shift in Perspective
+
+    - *Frequentist Approach:* Treats parameters (like the probability of a coin landing on heads) as fixed but unknown constants. Probability is defined as the limit of relative frequency over infinite trials. We use data to estimate these fixed parameters (e.g., Maximum Likelihood Estimation) and rely on p-values to reject null hypotheses.
+    - *Bayesian Approach:* Treats parameters as random variables describing a degree of belief. We start with a Prior belief (before seeing data), collect evidence (Likelihood), and update our belief to form a Posterior distribution.
+    
+2. Bayesian Networks (BNs)
+
+    A Bayesian Network is a Probabilistic Graphical Model that represents a set of variables and their conditional dependencies via a Directed Acyclic Graph (DAG).
+
+    - Nodes: Represent random variables.
+    - Edges: Represent conditional dependencies (causality).
+    - CPTs (Conditional Probability Tables): Quantify the relationship between a node and its parents.
+    
+    BNs allow us to perform Inference: updating the probabilities of unobserved variables when we observe the state of others (evidence).
