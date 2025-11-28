@@ -50,15 +50,15 @@ Think of the edges in the graph as "pipes" through which information flows. If a
 
 There are three main patterns that determine if information flows:
 
-    a.  **Serial (Chain):** $A \rightarrow B \rightarrow C$
-        * *Default:* $A$ influences $C$.
-        * *With Evidence:* If we observe **$B$**, the path is **blocked**. $A$ and $C$ become independent. (Knowing $A$ gives us no *new* info about $C$ if we already know $B$).
-    b.  **Diverging (Common Parent):** $A \leftarrow B \rightarrow C$
-        * *Default:* $A$ and $C$ are correlated (due to common cause $B$).
-        * *With Evidence:* If we observe **$B$**, the path is **blocked**. $A$ and $C$ become independent.
-    c.  **Converging (Collider/V-structure):** $A \rightarrow B \leftarrow C$
-        * *Default:* $A$ and $C$ are independent (different causes). The path is **blocked**.
-        * *With Evidence:* If we observe **$B$** (or a descendant of $B$), the path is **unblocked**. $A$ and $C$ become dependent. This is the logic behind "Explaining Away."
+- **Serial (Chain):** $A \rightarrow B \rightarrow C$
+    * *Default:* $A$ influences $C$.
+    * *With Evidence:* If we observe **$B$**, the path is **blocked**. $A$ and $C$ become independent. (Knowing $A$ gives us no *new* info about $C$ if we already know $B$).
+- **Diverging (Common Parent):** $A \leftarrow B \rightarrow C$
+    * *Default:* $A$ and $C$ are correlated (due to common cause $B$).
+    * *With Evidence:* If we observe **$B$**, the path is **blocked**. $A$ and $C$ become independent.
+- **Converging (Collider/V-structure):** $A \rightarrow B \leftarrow C$
+    * *Default:* $A$ and $C$ are independent (different causes). The path is **blocked**.
+    * *With Evidence:* If we observe **$B$** (or a descendant of $B$), the path is **unblocked**. $A$ and $C$ become dependent. This is the logic behind "Explaining Away."
 
 **The Markov Blanket:**
 The **Markov Blanket** of a node is the set of nodes that completely shields it from the rest of the network. It consists of:
