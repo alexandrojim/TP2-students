@@ -41,3 +41,29 @@ Before diving into the code, it is essential to understand the fundamental diffe
     - CPTs (Conditional Probability Tables): Quantify the relationship between a node and its parents.
     
     BNs allow us to perform Inference: updating the probabilities of unobserved variables when we observe the state of others (evidence).
+
+3. Conditional Independence and d-Separation
+
+One of the most powerful features of Bayesian Networks is that they explicitly show us which variables are independent of others. This concept is called **d-separation** (directed separation).
+
+Think of the edges in the graph as "pipes" through which information flows. If a path is "blocked," information cannot flow, and the variables are **Conditionally Independent**.
+
+There are three main patterns that determine if information flows:
+
+    a.  **Serial (Chain):** $A \rightarrow B \rightarrow C$
+        * *Default:* $A$ influences $C$.
+        * *With Evidence:* If we observe **$B$**, the path is **blocked**. $A$ and $C$ become independent. (Knowing $A$ gives us no *new* info about $C$ if we already know $B$).
+    b.  **Diverging (Common Parent):** $A \leftarrow B \rightarrow C$
+        * *Default:* $A$ and $C$ are correlated (due to common cause $B$).
+        * *With Evidence:* If we observe **$B$**, the path is **blocked**. $A$ and $C$ become independent.
+    c.  **Converging (Collider/V-structure):** $A \rightarrow B \leftarrow C$
+        * *Default:* $A$ and $C$ are independent (different causes). The path is **blocked**.
+        * *With Evidence:* If we observe **$B$** (or a descendant of $B$), the path is **unblocked**. $A$ and $C$ become dependent. This is the logic behind "Explaining Away."
+
+**The Markov Blanket:**
+The **Markov Blanket** of a node is the set of nodes that completely shields it from the rest of the network. It consists of:
+* Its Parents
+* Its Children
+* Its Children's Parents (Spouses)
+
+If you know the state of all nodes in the Markov Blanket, knowing anything else in the network is irrelevant to that node.
