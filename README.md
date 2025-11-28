@@ -10,18 +10,18 @@
 ## Travaux Pratiques (TP) / *Laboratories (Labs)*
 ### TP2 - Systèmes Bayésiens *(Bayesian systems)*
 
-L'objectif de ce laboratoire est de comprendre les différences entre l'approche fréquentiste et l'approche bayésienne et l'application au traitement d'images.
+L'objectif de ce laboratoire est de comprendre les différences entre l'approche fréquentiste et l'approche bayésienne ainsi que l'utilisation des réseaux bayesiens.
 
-*The objective of this lab is to understand the differences between the frequentist and bayesian approach and the application to image processing.*
+*The objective of this lab is to understand the differences between the frequentist and bayesian approach as well as understanding bayesian networks.*
 
 ### General instructions
 1. Tous les codes sont écrits en Python et ont été testés sur Google Collab. Veuillez suivre les instructions sur les Notebooks Jupyter correspondants à chaque exercice afin d'installer les libraries nécessaires.
 
     *All codes are written in Python and were tested on Google Collab. Please follow the instructions on the corresponding Jupyter Notebooks from each exercise in order to install the necessary libraries.*
 
-2. Les CRs du TP vont consister en les codes-source Python ou Jupyter des Exos 1 et 2 (avec vos propres modifications, rajouts et commentaires, intégrés). Les 2 CRs est à déposer sur Moodle (dossier CR_TP1_votre_option (ISI, SAR, IPS, app)). 
+2. Les CRs du TP vont consister en les codes-source Python ou Jupyter des Exos 1 et 2 (avec vos propres modifications, rajouts et commentaires, intégrés). Les 2 CRs est à déposer sur Moodle (dossier CR_TP1_votre_option (SI)). 
 
-    *The reports of the Lab will consist of the Python or Jupyter source codes of Exo 1 and 2 (with your own adds, modifications, and comments integrated). The 2 reports are to be placed on Moodle (CR_TP1_your_option (ISI, SAR, IPS, app) folder).*
+    *The reports of the Lab will consist of the Python or Jupyter source codes of Exo 1 and 2 (with your own adds, modifications, and comments integrated). The 2 reports are to be placed on Moodle (CR_TP1_your_option (SI) folder).*
 
 ### Context and Theoretical Background
 
